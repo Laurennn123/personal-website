@@ -1,24 +1,33 @@
 body { 
     background-color: #FFF8E8;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation-bar-container {
+    display: flex;
     background-color: #EFE9DA;
-    border: 2px solid rgba(56, 48, 48, 0.5);
+    border: 2px solid rgba(145, 130, 130, 0.5);
     height: 50px;
     border-radius: 30px;
     width: 80%;
-    display: flex;
     margin-top: 1rem;
     margin-left: 7.3rem;
     justify-content: center;
     align-items: center;
 }
 
+.selection {
+    display: inline-block;
+    font-size: 23px;
+}
 
-.navigation-bar-container nav ul li, .navigation-bar-container nav ul li a {
-    list-style: none;
-    text-decoration: none;
+.selection > a {
+    color: black;
+    opacity: 60%;
+    padding-bottom: 5px;
+    margin: 0px 15px 0px 15px;
+    font-family: 'Inter', sans-serif;
 }
 
 .navigation-bar-container nav > ul { 
@@ -26,16 +35,9 @@ body {
     margin: 0;
 }
 
-.selection {
-    display: inline-block;
-    font-size: 23px;
-    margin-right: 20px;
-}
-
-.selection > a {
-    color: black;
-    opacity: 40%;
-    padding-bottom: 5px;
+.navigation-bar-container nav ul li, .navigation-bar-container nav ul li a {
+    list-style: none;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -70,3 +72,34 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
+.greeting-text-container {
+    position: relative;
+    background-color:#EFE9DA;
+    height: 450px;
+    top: 70px;
+    border: 3px solid rgba(51, 48, 48, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.welcome-message { 
+    display: inline-block;
+    text-align: center;
+}
+
+#aspiring-text {
+    font-size: 55px;
+    width: 600px;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#welcome-site-text {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    bottom: 20px;
+}
