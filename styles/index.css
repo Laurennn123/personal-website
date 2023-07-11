@@ -22,6 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .selection {
@@ -117,6 +118,19 @@ nav ul li a:hover:after {
 
     .navigation-bar-container {
         padding: 15px;
+    }
+
+    .selection {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
+    #aspiring-text {
+        font-size: 36px;
+    }
+
+    #welcome-site-text {
+        font-size: 13px;
     }
 
 }
