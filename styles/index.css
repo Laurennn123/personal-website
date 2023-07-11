@@ -112,3 +112,11 @@ nav ul li a:hover:after {
     font-family: 'Inter', sans-serif;
     margin-top: 30px;
 }
+
+@media (max-width: 540px) {
+
+    .navigation-bar-container {
+        padding: 15px;
+    }
+
+}
