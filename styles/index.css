@@ -15,7 +15,7 @@ body {
 .navigation-bar-container {
     display: flex;
     background-color: #EFE9DA;
-    border: 2px solid rgba(145, 130, 130, 0.5);
+    border: 1px solid rgba(145, 130, 130, 0.5);
     height: 50px;
     border-radius: 30px;
     width: 80%;
@@ -32,10 +32,10 @@ body {
 
 .selection > a {
     color: black;
-    opacity: 60%;
+    opacity: 35%;
     padding-bottom: 5px;
     margin: 0px 15px 0px 15px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navigation-bar-container nav > ul { 
@@ -50,7 +50,7 @@ body {
 
 nav ul li a:hover {
     color: black;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 nav ul li a,
@@ -84,8 +84,8 @@ nav ul li a:hover:after {
     background-color:#EFE9DA;
     height: 450px;
     width: 100%;
-    border-top: 3px solid rgba(51, 48, 48, 0.5);
-    border-bottom: 3px solid rgba(51, 48, 48, 0.5);
+    border-top: 1px solid rgba(51, 48, 48, 0.5);
+    border-bottom: 1px solid rgba(51, 48, 48, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,8 +110,10 @@ nav ul li a:hover:after {
 }
 
 #welcome-site-text {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
     margin-top: 30px;
+    opacity: 55%;
 }
 
 @media (max-width: 540px) {
@@ -125,12 +127,16 @@ nav ul li a:hover:after {
         margin-bottom: 7px;
     }
 
+    .selection > a {
+        margin: 0px 3px;
+    }
+
     #aspiring-text {
         font-size: 36px;
     }
 
     #welcome-site-text {
-        font-size: 13px;
+        font-size: 14px;
     }
 
 }
