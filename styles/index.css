@@ -12,17 +12,36 @@ body {
     margin-top: 10px;
 }
 
+.site-header-container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
 .navigation-bar-container {
     display: flex;
-    background-color: #EFE9DA;
+    background-color: #FEFAF2;
     border: 1px solid rgba(145, 130, 130, 0.5);
     height: 50px;
-    border-radius: 30px;
-    width: 80%;
+    width: 100%;
+    border-radius: 13px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 10px;
+}
+
+.github-logo-container {
+    position: relative;
+    right: 220px;
+}
+
+.github-logo-image {
+    width: 40px;
+}
+
+.navigation-bar-container > nav {
+    margin-right: 30px;
 }
 
 .selection {
@@ -34,7 +53,7 @@ body {
     color: black;
     opacity: 35%;
     padding-bottom: 5px;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 15px 0px 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -48,7 +67,7 @@ body {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul > .selection a:hover {
     color: black;
     opacity: 100%;
 }
@@ -63,7 +82,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::after { 
+nav ul .selection > a::after { 
     position: absolute;
     content: '';
     bottom: 0;
@@ -81,7 +100,7 @@ nav ul li a:hover:after {
 }
 
 .greeting-text-container {
-    background-color:#EFE9DA;
+    background-color:#FEFAF2;
     height: 450px;
     width: 100%;
     border-top: 1px solid rgba(51, 48, 48, 0.5);
@@ -119,16 +138,22 @@ nav ul li a:hover:after {
 @media (max-width: 540px) {
 
     .navigation-bar-container {
+        flex-wrap: nowrap;
         padding: 15px;
     }
 
+    .github-logo-container {
+        position: static;
+        margin-left: 3px;
+    }
+
     .selection {
-        font-size: 20px;
+        font-size: 19px;
         margin-bottom: 7px;
     }
 
     .selection > a {
-        margin: 0px 3px;
+        margin: 0px 16px;
     }
 
     #aspiring-text {
@@ -138,5 +163,13 @@ nav ul li a:hover:after {
     #welcome-site-text {
         font-size: 14px;
     }
+
+}
+
+@media (max-width: 810px) {
+
+    .github-logo-container {
+        position: static;
+    } 
 
 }
