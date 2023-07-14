@@ -23,6 +23,7 @@ body {
     background-color: #FEFAF2;
     height: 50px;
     width: 100%;
+    border: 1px solid rgba(156, 156, 150, 0.6);
     border-radius: 13px;
     justify-content: center;
     align-items: center;
@@ -39,10 +40,6 @@ body {
     width: 40px;
 }
 
-.navigation-bar-container > nav {
-    margin-right: 30px;
-}
-
 .selection {
     display: inline-block;
     font-size: 22px;
@@ -54,6 +51,10 @@ body {
     padding-bottom: 5px;
     margin: 0px 15px 0px 20px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.navigation-bar-container > a > img:hover {
+    opacity: 60%;
 }
 
 .navigation-bar-container nav > ul { 
@@ -101,6 +102,8 @@ nav ul li a:hover:after {
 .greeting-text-container {
     background-color:#FEFAF2;
     height: 450px;
+    border-top: 1px solid rgba(156, 156, 150, 0.6);
+    border-bottom: 1px solid rgba(156, 156, 150, 0.6);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -123,6 +126,7 @@ nav ul li a:hover:after {
 #aspiring-text {
     font-size: 55px;
     font-family: 'Montserrat', sans-serif;
+    width: 567px;
 }
 
 .name-welcome-text {
@@ -136,37 +140,40 @@ nav ul li a:hover:after {
 
     .navigation-bar-container {
         flex-wrap: nowrap;
-        padding: 15px;
+        padding: 20px;
+    }
+    
+    .navigation-bar-container nav > ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: center;
     }
 
     .github-logo-container {
         position: static;
-        margin-left: 3px;
-    }
-
-    .navigation-bar-container > nav {
-        margin-right: 0px;
     }
 
     .selection {
-        font-size: 19px;
-        margin-bottom: 7px;
+        flex: 1;
     }
 
     .selection > a {
-        margin: 0px 16px;
+        margin: 0px 0px;
+        opacity: 60%;
+        padding: 0px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
     }
 
-    .greeting-text-items {
-        margin: 0px 40px;
-    }
-
-    .welcome-message {
-        text-align: center;
+    nav ul li a {
+        position: static;
     }
 
     #aspiring-text {
-        font-size: 28px;
+        font-size: 35px;
+        width: 100%;
     }
 
     .name-welcome-text {
