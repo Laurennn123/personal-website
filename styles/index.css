@@ -197,51 +197,53 @@ nav ul li a:hover:after {
 
 /* Resume page styles */
 
+#resume-page-body span{
+    font-family: 'Open Sans', sans-serif;
+}
+
 #contact-container {
     background-color: #403C3C;
     width: 20%;
-    height: 700px;
+    height: 1080px;
     display: inline-block;
+    position: relative;
 }
 
 #formal-pic-container {
-    display: flex;
-    justify-content: center;
-    width: 50%;
+    width: 150px;
     position: relative;
     top: 20px;
     left:49px;
 }
 
-#davd-formal-picture {
-    flex: 1;
-    width: 50%;
+#david-formal-picture {
+    display: block;
+    width: 100%;
 }
 
 #contact-container-information {
-    height: 50%;
+    height: 200px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    width: 270px;
 }
 
-#contact-heading-container {
-    height: 0px;
+#contact-title-container {
     position: relative;
     left: 48px;
+    margin-bottom: 10px;
 }
 
-#contact-heading{
+#contact-title{
     text-transform: uppercase;
     font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
     color: white;
+    display: block;
 }
 
 #contact-details-container {
-    height: 50%;
-    position: relative;
-    bottom: 20px;
+    height: 150px;
 }
 
 #contact-details-container > ul {
@@ -264,7 +266,6 @@ nav ul li a:hover:after {
 .contact-text {
     display: inline-block;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     font-weight: lighter;
 }
@@ -277,5 +278,134 @@ nav ul li a:hover:after {
     width: 25px;
 }
 
+#information-container {
+    display: inline-block;
+    position: absolute;
+    height: 400px;
+    width: 43%;
+    left: 330px;
+    top: 40px;
+}
+
+#heading-name {
+    display: inline-block;
+}
+
+#heading-name {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #707070;
+    width: 100%;
+}
+
+#skills-container, #education-title-container {
+    background-color: #E5E5E5;
+    padding: 12px;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 15px;
+}
+
+#skills-title, #education-title {
+    color: #7E7878;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#list-of-skills-container, #school-address-and-course-subtitle-container {
+    border-left: 1px solid;
+    color: #707070;
+}
+
+#list-of-skills-container > ul{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-left: 10px;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: square;
+    width: 287px;
+}
+
+#list-of-skills-container > ul > li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.skills-subtitle {
+    font-weight: bold;
+}
+
+#school-address-and-course-subtitle-container  {
+    margin-top: 10px;
+}
+
+.school-address-and-course-subtitle {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#school-address-subtitle {
+    text-transform: uppercase;
+}
+
+#course-subtitle {
+    font-weight: bold;
+}
+
+@media (max-width: 540px) {
+
+    #contact-container {
+        height: 1400px;
+        width: 50%;
+    }
+
+    #formal-pic-container {
+        left: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #david-formal-picture {
+        width: 70%;
+    }
+
+    #contact-title {
+        font-size: 23px;
+    }
+
+    #contact-details-container > ul {
+        margin-left: 10%;
+    }
+
+    .contact-details-logo {
+        margin-right: 5px;
+    }
+
+    #contact-container-information {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #contact-title-container {
+        left: 0px;
+    }
+
+    .contact-number-and-email-image, .contact-details-logo{
+        width: 18px;
+    }
+
+    .contact-text {
+        font-size: 10px;
+    }
+
+    #information-container {
+        
+    }
+}
 
 
