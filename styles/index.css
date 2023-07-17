@@ -374,18 +374,6 @@ nav ul li a:hover:after {
         width: 70%;
     }
 
-    #contact-title {
-        font-size: 23px;
-    }
-
-    #contact-details-container > ul {
-        margin-left: 10%;
-    }
-
-    .contact-details-logo {
-        margin-right: 5px;
-    }
-
     #contact-container-information {
         justify-content: center;
         width: 100%;
@@ -395,16 +383,51 @@ nav ul li a:hover:after {
         left: 0px;
     }
 
+    #contact-title {
+        font-size: 23px;
+    }
+
+    #contact-details-container > ul {
+        margin-left: 15%;
+    }
+
+    .contact-details-logo {
+        margin-right: 5px;
+    }
+
     .contact-number-and-email-image, .contact-details-logo{
         width: 18px;
     }
 
     .contact-text {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     #information-container {
-        
+        left: 202px;
+    }
+
+    #heading-name {
+        font-size: 21px;
+    }
+
+    #skills-container, #education-title-container {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    #list-of-skills-container > ul {
+        width: 90%;
+        gap: 5px;
+        margin-left: 5px;
+    }
+
+    #list-of-skills-container > ul > li, #list-of-skills-container, #school-address-and-course-subtitle-container {
+        font-size: 11px;
+    }
+
+    #school-address {
+        margin-bottom: 5px;
     }
 }
 
