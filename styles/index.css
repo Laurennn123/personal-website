@@ -356,7 +356,7 @@ nav ul li a:hover:after {
 
     #contact-container {
         height: 1400px;
-        width: 50%;
+        width: 45%;
     }
 
     #formal-pic-container {
@@ -367,7 +367,7 @@ nav ul li a:hover:after {
     }
 
     #david-formal-picture {
-        width: 70%;
+        width: 60%;
     }
 
     #contact-container-information {
@@ -380,11 +380,11 @@ nav ul li a:hover:after {
     }
 
     #contact-title {
-        font-size: 23px;
+        font-size: 21px;
     }
 
     #contact-details-container > ul {
-        margin-left: 15%;
+        margin-left: 14%;
     }
 
     .contact-details-logo {
@@ -392,15 +392,15 @@ nav ul li a:hover:after {
     }
 
     .contact-number-and-email-image, .contact-details-logo{
-        width: 18px;
+        width: 16px;
     }
 
     .contact-text {
-        font-size: 9px;
+        font-size: 8.5px;
     }
 
     #information-container {
-        left: 202px;
+        left: 194px;
     }
 
     #heading-name {
