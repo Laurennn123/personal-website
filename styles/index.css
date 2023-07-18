@@ -151,7 +151,7 @@ nav ul li a:hover:after {
     #navigation-bar-container nav > ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 15px;
         justify-content: center;
     }
 
@@ -170,10 +170,6 @@ nav ul li a:hover:after {
         flex: 1;
         display: flex;
         justify-content: center;
-    }
-
-    nav ul li a {
-        position: static;
     }
 
     #aspiring-text {
