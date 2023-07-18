@@ -9,7 +9,7 @@ body {
     background-color: #FFF8E8;
 }
 
-.home-page-container {
+#home-page-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,13 +17,13 @@ body {
     margin-top: 10px;
 }
 
-.site-header-container {
+#site-header-container {
     display: flex;
     width: 80%;
     justify-content: center;
 }
 
-.navigation-bar-container {
+#navigation-bar-container {
     display: flex;
     background-color: #FEFAF2;
     height: 50px;
@@ -36,12 +36,12 @@ body {
     margin-top: 10px;
 }
 
-.github-logo-container {
+#github-logo-container {
     position: relative;
     right: 220px;
 }
 
-.github-logo-image {
+#github-logo-image {
     width: 40px;
 }
 
@@ -58,16 +58,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.navigation-bar-container > a > img:hover {
+#navigation-bar-container > a > img:hover {
     opacity: 60%;
 }
 
-.navigation-bar-container nav > ul { 
+#navigation-bar-container nav > ul { 
     padding: 0;
     margin: 0;
 }
 
-.navigation-bar-container nav ul li, .navigation-bar-container nav ul li a {
+#navigation-bar-container nav ul li, #navigation-bar-container nav ul li a {
     list-style: none;
     text-decoration: none;
 }
@@ -104,7 +104,7 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
-.greeting-text-container {
+#greeting-text-container {
     background-color:#FEFAF2;
     height: 450px;
     border-top: 1px solid rgba(156, 156, 150, 0.6);
@@ -116,7 +116,7 @@ nav ul li a:hover:after {
     align-items: center;
 }
 
-.greeting-text-container > div {
+#greeting-text-container > div {
     position: relative;
     bottom: 45px;
     display: flex;
@@ -143,19 +143,19 @@ nav ul li a:hover:after {
 
 @media (max-width: 540px) {
 
-    .navigation-bar-container {
+    #navigation-bar-container {
         flex-wrap: nowrap;
         padding: 20px;
     }
     
-    .navigation-bar-container nav > ul {
+    #navigation-bar-container nav > ul {
         display: flex;
         flex-wrap: wrap;
         gap: 14px;
         justify-content: center;
     }
 
-    .github-logo-container {
+    #github-logo-container {
         position: static;
     }
 
@@ -189,7 +189,7 @@ nav ul li a:hover:after {
 
 @media (max-width: 810px) {
 
-    .github-logo-container {
+    #github-logo-container {
         position: static;
     } 
 
@@ -335,7 +335,7 @@ nav ul li a:hover:after {
     font-family: 'Open Sans', sans-serif;
 }
 
-.skills-subtitle {
+.skills-subtitle, #course-subtitle {
     font-weight: bold;
 }
 
@@ -350,10 +350,6 @@ nav ul li a:hover:after {
 
 #school-address-subtitle {
     text-transform: uppercase;
-}
-
-#course-subtitle {
-    font-weight: bold;
 }
 
 @media (max-width: 540px) {
