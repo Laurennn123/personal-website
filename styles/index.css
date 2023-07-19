@@ -197,8 +197,12 @@ nav ul li a:hover:after {
     font-family: 'Open Sans', sans-serif;
 }
 
+#contact-title, .contact-text, #heading-name, #list-of-skills-container, #school-address-and-course-subtitle-container {
+    color: #707070;
+}
+
 #contact-container {
-    background-color: #403C3C;
+    background-color: #FEFAF2;
     width: 20%;
     height: 1080px;
     display: inline-block;
@@ -234,7 +238,6 @@ nav ul li a:hover:after {
 #contact-title{
     text-transform: uppercase;
     font-size: 30px;
-    color: white;
     display: block;
 }
 
@@ -261,7 +264,6 @@ nav ul li a:hover:after {
 
 .contact-text {
     display: inline-block;
-    color: white;
     font-size: 13px;
     font-weight: lighter;
 }
@@ -291,7 +293,6 @@ nav ul li a:hover:after {
     font-size: 45px;
     text-transform: uppercase;
     font-weight: bolder;
-    color: #707070;
     width: 100%;
 }
 
@@ -311,7 +312,6 @@ nav ul li a:hover:after {
 
 #list-of-skills-container, #school-address-and-course-subtitle-container {
     border-left: 1px solid;
-    color: #707070;
 }
 
 #list-of-skills-container > ul{
