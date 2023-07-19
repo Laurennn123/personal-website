@@ -4,9 +4,95 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projects</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            #projects-container {
+                background-color: #FEFAF2;
+                height: 550px;
+                position: relative;
+                top: 50px;
+            }
+
+            #projects-text-container {
+                width: 50%;
+                position: absolute;
+                left: 100px;
+                top: 50px;
+            }
+
+            #projects-title {
+                font-size: 55px;
+                margin-bottom: 30px;
+            }
+            
+            #automated-library-system-title { 
+                font-size: 25px;
+                margin-bottom: 1px;
+            }
+
+            #automated-library-system-description {
+                font-weight: lighter;
+                font-size: 13px;
+                opacity: 50%;
+                width: 41%;
+                text-align: justify;
+                margin-bottom: 10px;
+            }
+
+            #projects-text-container > span {
+                display: block;
+                color: #707070;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            @media (max-width: 540px) {
+                
+                #projects-container {
+                    height: 600px;
+                }
+
+                #projects-title {
+                    font-size: 40px;
+                }
+                
+                #automated-library-system {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+
+                #automated-library-system-description {
+                    width: 100%;
+                }
+
+                #automated-library-system-video {
+                    width: 250px;
+                }
+
+            }
+        </style>
         </head>
         
         <body>
-    
+            <div id="projects-container">
+                <div id="projects-text-container">
+                    <span id="projects-title">Projects</span>
+                    <span id="automated-library-system-title">Automated library management system</span>
+                    <span id="automated-library-system-description">
+                        This system is for making an appointment to borrow books that may help the librarians have
+                        They have easy access to monitor the status of students, school administrators, and teachers.
+                        for the limited time/day provided for students to hold and pre-own the book.
+                    </span>
+                    <video id="automated-library-system-video" controls width="350">
+                        <source src="./videos/Automated library management system.mp4">
+                    </video>
+                </div>
+            </div>
         </body>
     </html>
