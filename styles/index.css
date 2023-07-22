@@ -145,7 +145,7 @@ nav ul li a:hover:after {
 
     #navigation-bar-container {
         flex-wrap: nowrap;
-        padding: 1.5625rem;
+        padding: 1.6875rem;
     }
     
     #navigation-bar-container nav > ul {
@@ -161,6 +161,7 @@ nav ul li a:hover:after {
 
     .selection {
         flex: 1;
+        font-size: 1.25rem;
     }
 
     .selection > a {
