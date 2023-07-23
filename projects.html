@@ -8,6 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <style>
+            @keyframes slideInLeft {
+                0% {
+                      transform: translateX(-200%);
+                }
+                 100% {
+                         transform: translateX(0);
+                 }      
+            }
             
             body {
                 margin: 0;
@@ -29,17 +37,20 @@
             }
 
             #projects-title {
+                animation: 3s ease-out 0s 1 slideInLeft;
                 font-size: 3.4375rem;
                 margin-top: 0px;
                 margin-bottom: 30px;
             }
             
-            #automated-library-system-title { 
+            #automated-library-system-title {
+                animation: 3s ease-out 0s 1 slideInLeft;
                 font-size: 1.5625rem;
                 margin-bottom: 3px;
             }
 
             #automated-library-system-description {
+                animation: 2s ease-out 0s 1 slideInLeft;
                 display: block;
                 font-weight: lighter;
                 font-size: 13px;
@@ -48,6 +59,10 @@
                 opacity: 50%;
                 text-align: left;
                 width: 41%;
+            }
+
+            #automated-library-system-simulation {
+                animation: 1s ease-out 0s 1 slideInLeft;
             }
 
             #projects-text-container > span {
