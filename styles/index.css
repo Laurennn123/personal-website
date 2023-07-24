@@ -349,6 +349,61 @@ nav ul li a:hover:after {
     text-transform: uppercase;
 }
 
+#navigation-bar-container-in-resume {
+    height: 100%;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    width: 0;
+    background-color: #F4F1EB;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#navigation-bar-container-in-resume > img {
+    display: block;
+    width: 32px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    opacity: 50%;
+}
+
+#navigation-items {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+#navigation-items a{
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    color: #7E7878;
+    opacity: 50%;
+    transition: 0.3s;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#navigation-items a:hover, #navigation-bar-container-in-resume > img:hover {
+    color: #3b3a3a;
+    opacity: 100%;
+}
+
+#fa-bar-icon {
+    display: inline-block;
+    width: 30px;
+    position: fixed;
+    cursor: pointer;
+    left: 1277px;
+    top: 20px;
+}
+
 @media (max-width: 540px) {
 
     #contact-container {
@@ -422,6 +477,68 @@ nav ul li a:hover:after {
     #school-address {
         margin-bottom: 5px;
     }
+
+    #fa-bar-icon {
+        display: inline-block;
+        width: 20px;
+        position: fixed;
+        cursor: pointer;
+        left: 370px;
+        top: 13px;
+    }
+
 }
+
+@media (max-width: 428px) {
+
+    #fa-bar-icon {
+        left: 381px;
+    }
+
+    #information-container {
+        left: 210px;
+    }
+    
+}
+
+@media (max-width: 390px) {
+    
+    #fa-bar-icon {
+        left: 354px;
+    }
+
+    #information-container {
+        left: 193px;
+    }
+    
+    
+}
+
+@media (max-width: 384px) {
+    
+    #fa-bar-icon {
+        left: 344px;
+    }
+
+    #information-container {
+        left: 186px;
+    }
+    
+    
+}
+
+@media (max-width: 360px) {
+    
+    #fa-bar-icon {
+        left: 320px;
+    }
+
+    #information-container {
+        left: 185px;
+    }
+    
+}
+
+
 
 
