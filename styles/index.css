@@ -386,7 +386,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     width: 39%;
 }
 
-#navigation-items a{
+#navigation-items a {
     text-decoration: none;
     font-size: 21px;
     font-family: 'Open Sans', sans-serif;
@@ -494,6 +494,28 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
         cursor: pointer;
         left: 370px;
         top: 13px;
+    }
+
+    #home-section {
+        width: 45%;
+    }
+    
+    #project-section, #resume-section {
+        width: 60%;
+    }
+    
+    #navigation-bar-container-in-resume {
+        opacity: 50%;
+    }
+
+    #navigation-bar-container-in-resume > img {
+        width: 23px;
+        top: 15px;
+    }
+
+    #navigation-items a {
+        font-size: 15px;
+        opacity: 100%;
     }
 
 }
