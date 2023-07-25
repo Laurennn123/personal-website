@@ -77,17 +77,17 @@ nav ul > .selection a:hover {
     opacity: 100%;
 }
 
-nav ul li a,
+nav ul li a, #navigation-items a, #navigation-items a:after, #navigation-items a:before,
 nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
 
-nav ul li a {
+nav ul li a, #navigation-items a{
     position: relative;
 }
 
-nav ul .selection > a::after { 
+nav ul .selection > a::after, #navigation-items a::after{ 
     position: absolute;
     content: '';
     bottom: 0;
@@ -100,7 +100,7 @@ nav ul .selection > a::after {
     height: 2px;
 }
 
-nav ul li a:hover:after {
+nav ul li a:hover:after, #navigation-items a:hover::after {
     width: 100%;
 }
 
@@ -375,11 +375,20 @@ nav ul li a:hover:after {
     flex-direction: column;
     gap: 5px;
     width: 100%;
+    align-items: center;
+}
+
+#home-section {
+    width: 30%;
+}
+
+#project-section, #resume-section {
+    width: 39%;
 }
 
 #navigation-items a{
     text-decoration: none;
-    font-size: 23px;
+    font-size: 21px;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     color: #7E7878;
@@ -387,7 +396,7 @@ nav ul li a:hover:after {
     transition: 0.3s;
     display: block;
     text-align: center;
-    width: 100%;
+    padding-bottom: 5px;
 }
 
 #navigation-items a:hover, #navigation-bar-container-in-resume > img:hover {
@@ -397,7 +406,7 @@ nav ul li a:hover:after {
 
 #fa-bar-icon {
     display: inline-block;
-    width: 30px;
+    width: 1.625rem;
     position: fixed;
     cursor: pointer;
     left: 1277px;
