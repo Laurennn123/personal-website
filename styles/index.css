@@ -6,7 +6,7 @@ body {
 /* Home page styles */
 
 #home-page-body { 
-    background-color: #FFF8E8;
+    background-color: #FEFAF2;
 }
 
 #home-page-container {
@@ -19,7 +19,7 @@ body {
 
 #site-header-container {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -28,43 +28,58 @@ body {
     background-color: #FEFAF2;
     height: 50px;
     width: 100%;
-    border: 1px solid rgba(156, 156, 150, 0.6);
-    border-radius: 15px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 10px;
-}
-
-#github-logo-container {
     position: relative;
-    right: 220px;
 }
 
-#github-logo-image {
-    width: 40px;
+#navigation-bar-container > a {
+    position: absolute;
+    left: 140px;
+}
+
+#my-logo {
+    width: 63px;
+}
+
+#contact-container-homepage {
+    display: flex;
+    gap: 30px;
+}
+
+#contact-container-homepage > a {
+    text-decoration: none;
+    color: #85817a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer > p {
+    font-size: 12px;
+}
+
+#contact-container-homepage > a:hover {
+    color: black;
 }
 
 .selection {
     display: inline-block;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .selection > a {
     color: black;
     opacity: 45%;
-    padding-bottom: 5px;
-    margin: 0px 15px 0px 20px;
+    padding-bottom: 3px;
+    margin: 0px 25px;
     font-family: 'Open Sans', sans-serif;
-}
-
-#navigation-bar-container > a > img:hover {
-    opacity: 60%;
 }
 
 #navigation-bar-container nav > ul { 
     padding: 0;
     margin: 0;
+    margin-right: 80px;
 }
 
 #navigation-bar-container nav ul li, #navigation-bar-container nav ul li a {
@@ -106,21 +121,22 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 
 #greeting-text-container {
     background-color:#FEFAF2;
-    height: 450px;
-    border-top: 1px solid rgba(156, 156, 150, 0.6);
-    border-bottom: 1px solid rgba(156, 156, 150, 0.6);
+    /* border-top: 1px solid rgba(156, 156, 150, 0.6);
+    border-bottom: 1px solid rgba(156, 156, 150, 0.6); */
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-#greeting-text-container > div {
-    position: relative;
-    bottom: 45px;
+#greeting-text-items {
+    position: absolute;
     display: flex;
     flex-direction: column;
+    bottom: 125px;
 }
 
 .welcome-message {
@@ -139,6 +155,12 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     opacity: 50%;
+}
+
+#footer-link {
+    position: relative;
+    left: -468px;
+    bottom: 10px;
 }
 
 @media (max-width: 540px) {
