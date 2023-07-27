@@ -33,11 +33,12 @@ body {
     flex-wrap: wrap;
     margin-top: 10px;
     position: relative;
+    border-bottom: 1px solid rgb(119, 104, 104, .10);
 }
 
 #navigation-bar-container > a {
     position: absolute;
-    left: 140px;
+    left: 100px;
 }
 
 #my-logo {
@@ -46,7 +47,7 @@ body {
 
 #contact-container-homepage {
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 #contact-container-homepage > a {
@@ -79,7 +80,7 @@ footer > p {
 #navigation-bar-container nav > ul { 
     padding: 0;
     margin: 0;
-    margin-right: 80px;
+    margin-right: 100px;
 }
 
 #navigation-bar-container nav ul li, #navigation-bar-container nav ul li a {
@@ -119,10 +120,17 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     width: 100%;
 }
 
+#home-page{
+    color: black;
+    opacity: 100%;
+}
+
+#home-page:hover {
+    opacity: 45%;
+}
+
 #greeting-text-container {
     background-color:#FEFAF2;
-    /* border-top: 1px solid rgba(156, 156, 150, 0.6);
-    border-bottom: 1px solid rgba(156, 156, 150, 0.6); */
     height: 400px;
     width: 100%;
     display: flex;
@@ -159,8 +167,17 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 
 #footer-link {
     position: relative;
-    left: -468px;
+    left: -500px;
     bottom: 10px;
+}
+
+#fa-bar-icon-homepage {
+    display: none;
+    width: 1.625rem;
+    position: fixed;
+    cursor: pointer;
+    left: 1277px;
+    top: 20px;
 }
 
 @media (max-width: 540px) {
@@ -168,6 +185,17 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     #navigation-bar-container {
         flex-wrap: nowrap;
         padding: 1.6875rem;
+        margin-top: 0px;
+    }
+    
+    #navigation-bar-container > a {
+        left: 35px;
+    }
+    
+    #fa-bar-icon-homepage {
+        display: inline-block;
+        left: 325px;
+        top: 47px;
     }
     
     #navigation-bar-container nav > ul {
@@ -191,7 +219,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
         opacity: 60%;
         padding: 0px;
         flex: 1;
-        display: flex;
+        display: none;
         justify-content: center;
     }
 
@@ -204,7 +232,42 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
         font-size: 11.5px;
     }
 
+    #footer-link {
+        left: 0;
+        top: 100px;
+        bottom: 0px;
+    }
+
+    #contact-container-homepage > a {
+        font-size: 14px;
+    }
+
 }
+
+@media (max-width: 428px) {
+
+    #fa-bar-icon-homepage {
+        left: 345px;
+    }
+
+}
+
+@media (max-width: 384px) {
+
+    #fa-bar-icon-homepage {
+        left: 325px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    #fa-bar-icon-homepage {
+        left: 300px;
+    }
+
+}
+
 
 @media (max-width: 810px) {
 
@@ -408,22 +471,31 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     width: 39%;
 }
 
-#navigation-items a {
+.resume-selection {
     text-decoration: none;
     font-size: 21px;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-    color: #7E7878;
-    opacity: 50%;
+    color: black;
+    opacity: 45%;
     transition: 0.3s;
     display: block;
     text-align: center;
     padding-bottom: 5px;
 }
 
-#navigation-items a:hover, #navigation-bar-container-in-resume > img:hover {
-    color: #3b3a3a;
+.resume-selection:hover, #navigation-bar-container-in-resume > img:hover {
+    color: black;
     opacity: 100%;
+}
+
+#resume-section {
+    color: black;
+    opacity: 100%;
+}
+
+#resume-section:hover {
+    opacity: 45%;
 }
 
 #fa-bar-icon {
@@ -535,9 +607,19 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
         top: 15px;
     }
 
+    #navigation-items{
+        align-items: flex-end;
+    }
+
     #navigation-items a {
         font-size: 15px;
-        opacity: 100%;
+        width: 14%;
+        margin-right: 40px;
+    }
+
+    #resume-section {
+        color: black;
+        opacity: 45%;
     }
 
 }
