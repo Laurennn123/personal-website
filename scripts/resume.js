@@ -13,5 +13,6 @@ $("#close-button").click(function() {
 if(window.matchMedia("(min-width: 576px)").matches) {
     changingWidth(15);
 } else {
-    changingWidth(30);
+    changingWidth(100);
+    $("#resume-section").css("opacity", "100%");
 }
