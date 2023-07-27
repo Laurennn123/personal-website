@@ -15,6 +15,4 @@ if(window.matchMedia("(min-width: 576px)").matches) {
 } else {
     changingWidth(100);
     $("#home-section").css("opacity", "100%");
-    $("#navigation-items a").css({"width":"14%", "margin-right":"40px"});
-    $("#navigation-items").css("align-items", "flex-end");
 }
