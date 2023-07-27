@@ -247,7 +247,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 @media (max-width: 428px) {
 
     #fa-bar-icon-homepage {
-        left: 345px;
+        left: 365px;
     }
 
 }
@@ -255,7 +255,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 @media (max-width: 384px) {
 
     #fa-bar-icon-homepage {
-        left: 325px;
+        left: 335px;
     }
 
 }
@@ -263,7 +263,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 @media (max-width: 360px) {
 
     #fa-bar-icon-homepage {
-        left: 300px;
+        left: 315px;
     }
 
 }
