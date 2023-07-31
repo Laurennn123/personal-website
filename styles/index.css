@@ -211,7 +211,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     
     #fa-bar-icon-homepage {
         display: inline-block;
-        left: 325px;
+        left: 85%;
         top: 37px;
     }
     
@@ -260,47 +260,6 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 
 }
 
-@media (max-width: 428px) {
-
-    #fa-bar-icon-homepage {
-        left: 370px;
-    }
-
-}
-
-@media (max-width: 412px) and (max-width: 414px) {
-
-    #fa-bar-icon-homepage {
-        left: 355px;
-    }
-
-}
-
-@media (max-width: 390px) {
-
-    #fa-bar-icon-homepage {
-        left: 335px;
-    }
-    
-}
-
-@media (max-width: 384px) {
-
-    #fa-bar-icon-homepage {
-        left: 330px;
-    }
-
-}
-
-@media (max-width: 360px) {
-
-    #fa-bar-icon-homepage {
-        left: 310px;
-    }
-
-}
-
-
 @media (max-width: 810px) {
 
     #github-logo-container {
@@ -311,7 +270,12 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 
 /* Resume page styles */
 
-#resume-page-body span{
+#contact-container, .contact-text, #information-container, #heading-name, .school-address-and-course-subtitle,
+#navigation-bar-container-in-resume, #fa-bar-icon {
+    display: inline-block;
+}
+
+#resume-page-body span, .resume-selection, #list-of-skills-container > ul > li{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -322,8 +286,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 #contact-container {
     background-color: #FEFAF2;
     width: 20%;
-    height: 1080px;
-    display: inline-block;
+    height: 100vh;
     position: relative;
 }
 
@@ -370,18 +333,17 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-left: 30px;
+    margin-left: 8%;
 }
 
 .contact-details-logo {
     width: 25px;
     display: block;
     float: left;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .contact-text {
-    display: inline-block;
     font-size: 13px;
     font-weight: lighter;
 }
@@ -395,16 +357,11 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 }
 
 #information-container {
-    display: inline-block;
     position: absolute;
     height: 400px;
     width: 43%;
     left: 330px;
     top: 40px;
-}
-
-#heading-name {
-    display: inline-block;
 }
 
 #heading-name {
@@ -445,10 +402,6 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     width: 287px;
 }
 
-#list-of-skills-container > ul > li {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .skills-subtitle, #course-subtitle {
     font-weight: bold;
 }
@@ -458,7 +411,6 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 }
 
 .school-address-and-course-subtitle {
-    display: inline-block;
     margin-left: 10px;
 }
 
@@ -468,7 +420,6 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 
 #navigation-bar-container-in-resume {
     height: 100%;
-    display: inline-block;
     position: fixed;
     right: 0;
     width: 0;
@@ -506,7 +457,6 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 .resume-selection {
     text-decoration: none;
     font-size: 21px;
-    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     color: black;
     opacity: 45%;
@@ -531,7 +481,6 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 }
 
 #fa-bar-icon {
-    display: inline-block;
     width: 1.625rem;
     position: fixed;
     cursor: pointer;
@@ -542,8 +491,8 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 @media (max-width: 540px) {
 
     #contact-container {
-        height: 1400px;
-        width: 45%;
+        height: 100vh;
+        width: 53%;
     }
 
     #formal-pic-container {
@@ -566,12 +515,12 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
         left: 0px;
     }
 
-    #contact-title {
-        font-size: 21px;
+    #contact-title, #heading-name {
+        font-size: 24px;
     }
 
     #contact-details-container > ul {
-        margin-left: 14%;
+        margin-left: 17%;
     }
 
     .contact-details-logo {
@@ -583,20 +532,16 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     }
 
     .contact-text {
-        font-size: 8.5px;
+        font-size: 11px;
     }
 
     #information-container {
-        left: 194px;
-    }
-
-    #heading-name {
-        font-size: 21px;
+        left: 55%;
     }
 
     #skills-container, #education-title-container {
         width: 70%;
-        font-size: 15px;
+        font-size: 17px;
     }
 
     #list-of-skills-container > ul {
@@ -606,7 +551,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     }
 
     #list-of-skills-container > ul > li, #list-of-skills-container, #school-address-and-course-subtitle-container {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     #school-address {
@@ -614,11 +559,8 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     }
 
     #fa-bar-icon {
-        display: inline-block;
         width: 20px;
-        position: fixed;
-        cursor: pointer;
-        left: 370px;
+        left: 92%;
         top: 13px;
     }
 
@@ -631,7 +573,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     }
     
     #navigation-bar-container-in-resume {
-        opacity: 50%;
+        opacity: 90%;
     }
 
     #navigation-bar-container-in-resume > img {
@@ -644,7 +586,7 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
     }
 
     #navigation-items a {
-        font-size: 15px;
+        font-size: 18px;
         width: 20%;
         margin-right: 40px;
     }
@@ -656,56 +598,26 @@ nav ul li a:hover:after, #navigation-items a:hover::after {
 
 }
 
-@media (max-width: 428px) {
-
-    #fa-bar-icon {
-        left: 381px;
-    }
-
-    #information-container {
-        left: 210px;
-    }
-    
-}
-
 @media (max-width: 390px) {
-    
-    #fa-bar-icon {
-        left: 354px;
+
+    #contact-details-container > ul {
+        margin-left: 15%;
     }
 
-    #information-container {
-        left: 193px;
-    }
-    
-    
 }
 
 @media (max-width: 384px) {
-    
-    #fa-bar-icon {
-        left: 344px;
+
+    #contact-details-container > ul {
+        margin-left: 13%;
     }
 
-    #information-container {
-        left: 186px;
-    }
-    
-    
 }
 
 @media (max-width: 360px) {
     
-    #fa-bar-icon {
-        left: 320px;
+    #contact-details-container > ul {
+        margin-left: 10%;
     }
 
-    #information-container {
-        left: 185px;
-    }
-    
 }
-
-
-
-
